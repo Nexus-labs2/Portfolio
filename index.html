@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">[ ✕ Close ]</span>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<nav>
+  <a href="#hero" class="nav-logo">// ECE.PORTFOLIO</a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#major-projects">Projects</a></li>
+    <li><a href="#minor-projects">Fun</a></li>
+    <li><a href="#certifications">Certs</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div style="max-width:900px">
+    <div class="hero-tag">Electronics &amp; Telecommunication</div>
+    <h1 class="hero-name" id="hero-name">Your<br><span>Name</span><br>Here.</h1>
+    <p class="hero-title" id="hero-title">Loading…</p>
+    <p class="hero-bio" id="hero-bio"></p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num" id="stat-major">4<span>+</span></div><div class="stat-label">Major Projects</div></div>
+      <div class="stat"><div class="stat-num" id="stat-fun">10<span>+</span></div><div class="stat-label">Fun Builds</div></div>
+      <div class="stat"><div class="stat-num" id="stat-proto">6<span>+</span></div><div class="stat-label">Protocols</div></div>
+    </div>
+    <div class="hero-cta">
+      <a href="#major-projects" class="btn-primary">View Projects</a>
+      <a href="#certifications" class="btn-outline">Certifications</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="circuit-ring"><div class="ring-dot"></div></div>
+    <div class="circuit-ring"><div class="ring-dot ring-dot-2"></div></div>
+    <div class="circuit-ring"></div>
+    <div class="center-glow"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label">02 / Expertise</div>
+  <h2 class="section-heading reveal">What I work with</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-card"><div class="skill-icon"></div><div class="skill-title">Development Boards</div><div class="skill-tags" id="tags-boards"></div></div>
+    <div class="skill-card"><div class="skill-icon"></div><div class="skill-title">Protocols Implemented</div><div class="skill-tags" id="tags-protocols"></div></div>
+    <div class="skill-card"><div class="skill-icon"></div><div class="skill-title">Languages</div><div class="skill-tags" id="tags-languages"></div></div>
+    <div class="skill-card"><div class="skill-icon"></div><div class="skill-title">Tools &amp; Platforms</div><div class="skill-tags" id="tags-tools"></div></div>
+  </div>
+</section>
+
+<section id="major-projects">
+  <div class="section-label">03 / Major Projects</div>
+  <h2 class="section-heading reveal">Production-level<br>engineering work</h2>
+  <div id="major-projects-list"></div>
+</section>
+
+<section id="minor-projects">
+  <div class="section-label">04 / Fun Builds</div>
+  <h2 class="section-heading reveal">Things I made for<br>fun</h2>
+  <p class="section-sub reveal">Quick weekend experiments, silly ideas, and satisfying little contraptions. No deadlines, just vibes.</p>
+  <div class="minor-grid reveal" id="minor-projects-list"></div>
+</section>
+
+<section id="certifications">
+  <div class="section-label">05 / Certifications</div>
+  <h2 class="section-heading reveal">What I've learned,<br>formally</h2>
+  <div class="cert-section reveal">
+    <h3 class="cert-section-title">Ones That Matter</h3>
+    <div class="cert-grid" id="cert-matters-list"></div>
+  </div>
+  <div class="cert-section reveal">
+    <h3 class="cert-section-title"> Out of Curiosity</h3>
+    <div class="cert-grid" id="cert-curiosity-list"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">// Crafted with <span>caffeine</span> &amp; curiosity · ECE '26</div>
+  <ul class="footer-links">
+    <li><a href="#" id="footer-email">Email</a></li>
+    <li><a href="#" id="footer-linkedin" target="_blank">LinkedIn</a></li>
+    <li><a href="#" id="footer-github" target="_blank">GitHub</a></li>
+  </ul>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
